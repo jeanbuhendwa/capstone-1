@@ -1,6 +1,6 @@
 # Nodes modules and Linters files 
 node_modules
-package_lock.json
+package-lock.json
 package.json
 
 # Logs
