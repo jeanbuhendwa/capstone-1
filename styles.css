@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background: rgb(223, 223, 223);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* This styles the navigation menu for mobile version */
+.links-bar {
+  display: none;
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+}
+
+#nav-menu .logo {
+  display: none;
+}
+
+#nav-menu .list-menu {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #fff;
+  position: fixed;
+  padding: 80px 30px;
+}
+
+#nav-menu .list-menu .menu-item a {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #272a31;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-menu .list-menu .join-btn a {
+  display: none;
+}
+
+#nav-menu .list-menu .menu-item a:hover {
+  cursor: pointer;
+  color: #ec5242;
+}
+
+#nav-menu .list-menu .button-close {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: 900;
+  color: #272a31;
+}
+
+#nav-menu .menu-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#nav-menu .menu-btn i {
+  font-size: 30px;
+  color: #272a31;
+}
+
+@media screen and (min-width: 768px) {
+  /* This styles the nav menu for desktop version */
+  .links-bar {
+    display: block;
+    background: #272a31;
+  }
+
+  .links-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 100px;
+    list-style: none;
+  }
+
+  .links-bar ul li a {
+    color: #d3d3d3;
+    font-size: 12px;
+  }
+
+  #nav-menu {
+    padding: 20px 100px;
+    background: #fff;
+    position: static;
+  }
+
+  #nav-menu .logo {
+    display: block;
+  }
+
+  #nav-menu .logo #logo {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 900;
+    color: #272a31;
+  }
+
+  #nav-menu .logo #logo #logoSpan {
+    font-weight: 700;
+    color: #ec5242;
+  }
+
+  #nav-menu .list-menu {
+    display: flex;
+    align-items: center;
+    position: static;
+    gap: 20px;
+    padding: 20px;
+    margin-right: 180px;
+  }
+
+  #nav-menu .list-menu .menu-item a {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #272a31;
+  }
+
+  #nav-menu .list-menu .join-btn a {
+    display: block;
+    border: 2px solid #ec5242;
+    color: red;
+    padding: 0 15px;
+  }
+
+  #nav-menu .list-menu .button-close {
+    display: none;
+  }
+
+  #nav-menu .menu-btn {
+    display: none;
+  }
+}
